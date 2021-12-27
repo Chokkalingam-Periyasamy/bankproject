@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>Kanini Bank </h1>
+                
+            </div>
+            </div>
+
+
+        <br>
+        <br>
+        <form class="for" [formGroup]="mygroup" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+        <div class="text-center">
+            <input style="width:600px;" class="form-control" type="file" (change)="handleFileInput($event)" [formControl]="file" >
+            <br>
+            <button type="submit"
+                class="btn btn-success m-6">
+                Upload
+            </button>
+        </div>
+
+     </form>
+     <br>
+     <div class="btn">
+        <button class="btn btn-success" type="button" (click)="getBar()" [id]="ss">Bar Graph</button> &nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" (click)="getPie()" [id]="ss"> Pie Chart</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" (click)="getHist()" [id]="ss">Histogram Chart</button>
+    </div>  
+        <div class="jumbotron img">
+        <img style="width: 600px;" [src]="imageToShow" [id]="style">
+        </div>
+    </body>
+
+    
+    
+</html>

@@ -1,0 +1,21 @@
+#style{
+    width:300px;
+    height:300px;
+}
+#style1{
+    width:0px;
+    height:0px;
+}
+#s{
+    display:none
+}
+#s1{
+    display:block
+}
+
+.img,.for,.btn,.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
